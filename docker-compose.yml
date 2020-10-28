@@ -7,4 +7,4 @@ services:
     build:
       context: .
       args:
-        param_expr: "$PARAM_EXPR"
+        param_expr: "$PARAMETER_EXPR"
