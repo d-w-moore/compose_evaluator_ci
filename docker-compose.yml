@@ -1,9 +1,9 @@
 version: "3"
 services:
   evaluate:
-    env_file: .env
+    env_file: config.env
     volumes: 
-     - ./output:/output:rw
+     - ${SETTING_OUTPUT_DIRECTORY}:/output:rw
     build:
       context: .
       args:
