@@ -7,4 +7,4 @@ ENV  PLATFORM=${ARG_PLATFORM}
 
 COPY eval.py /
 
-CMD bash -c "perl -e'print $ENV{PLATFORM}' >/output/result ; python /eval.py /output/result"
+CMD bash -c 'echo == ${PLATFORM} == >/output/result2 ; python /eval.py /output/result'
