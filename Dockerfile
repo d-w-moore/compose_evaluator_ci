@@ -7,4 +7,4 @@ ENV  ENV_PLATFORM=${ARG_PLATFORM}
 
 COPY eval.py /
 
-CMD bash -c 'echo ${ENV_PLATFORM} >/output/result ; python /eval.py /output/result'
+CMD bash -c "echo == ${ENV_PLATFORM} == >/output/result ; python /eval.py /output/result"
