@@ -7,4 +7,4 @@ services:
     build:
       context: .
       args:
-        param_expr: "$PARAMETER_EXPR"
+        ARG_PLATFORM: "$SETTING_PLATFORM"
