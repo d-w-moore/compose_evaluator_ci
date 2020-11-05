@@ -1,7 +1,7 @@
 version: "3"
 services:
   evaluate:
-    env_file: config.env
+    env_file: jenkins.env
     volumes: 
      - ${SETTING_OUTPUT_DIRECTORY}:/output:rw
     build:
